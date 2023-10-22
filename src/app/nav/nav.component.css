@@ -1,0 +1,13 @@
+/* styles.css */
+nav {
+    padding: 1rem;
+    background: #343a40;
+  }
+  nav a {
+    color: #fff;
+    padding: 0 1rem;
+    text-decoration: none;
+  }
+  .active {
+    text-decoration: underline;
+  }

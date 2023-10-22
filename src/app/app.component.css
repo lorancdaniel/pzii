@@ -1,0 +1,38 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This makes sure your container takes up the entire vertical space */
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+  
+  main {
+    flex: 1; /* This allows the main content to grow and take up any available space */
+    padding: 20px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
