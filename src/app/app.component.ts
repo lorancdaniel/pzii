@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavComponent } from './nav/nav.component';
+import { GlobalStateService } from './global-state.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,8 @@ import { NavComponent } from './nav/nav.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'danielloranc';
+  state = this.globalStateService.getState();
+  constructor(private globalStateService: GlobalStateService) {}
+  ngOnInit(): void {
+  }
 }

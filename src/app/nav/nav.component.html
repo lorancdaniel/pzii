@@ -1,4 +1,5 @@
 <nav>
-  <a routerLink="/logowanie" routerLinkActive="active" ariaCurrentWhenActive="page">Logowanie</a>
+  <a *ngIf="!loggedIn" routerLink="/logowanie" routerLinkActive="active" ariaCurrentWhenActive="page">Logowanie</a>
+  <a *ngIf="loggedIn" (click)="logOff()" routerLinkActive="active" ariaCurrentWhenActive="page">Wyloguj się</a>
   <a routerLink="/main" routerLinkActive="active" ariaCurrentWhenActive="page">Strona Główna</a>
 </nav>

@@ -1,3 +1,10 @@
+<div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+</div>
+<div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+</div>
+
 <div class="logowanie">
 <h2>LOGOWANIE</h2>
 <form (ngSubmit)="logowanie()" #form="ngForm">
