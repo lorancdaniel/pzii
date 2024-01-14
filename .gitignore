@@ -11,6 +11,9 @@
 npm-debug.log
 yarn-error.log
 
+#django
+/django/myworld/Lib
+
 # IDEs and editors
 .idea/
 .project
